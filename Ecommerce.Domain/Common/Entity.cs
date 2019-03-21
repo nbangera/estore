@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Ecommerce.Domain.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Domain
+namespace Ecommerce.Domain.Common
 {
-    public class Class1
+    public class Entity:EntityBase
     {
+
     }
 }
