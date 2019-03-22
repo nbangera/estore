@@ -41,13 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Address.cs" />
+    <Compile Include="Common\Content.cs" />
+    <Compile Include="Common\Country.cs" />
     <Compile Include="Common\Entity.cs" />
+    <Compile Include="Common\Media.cs" />
+    <Compile Include="Common\StateOrProvince.cs" />
     <Compile Include="Common\User.cs" />
     <Compile Include="Common\UserRole.cs" />
     <Compile Include="Core\EntityBase.cs" />
     <Compile Include="Core\IEntityBase.cs" />
+    <Compile Include="Enum\MediaType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Customer\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

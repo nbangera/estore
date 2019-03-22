@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Domain.Common
 {
-    class User
+    public class User:Entity
     {
     }
 }

@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Domain.Common
+namespace Ecommerce.Domain.Enum
 {
-    public class UserRole
+    public enum MediaType
     {
+        Image = 1,
+
+        File = 2,
+
+        Video = 13,
     }
 }

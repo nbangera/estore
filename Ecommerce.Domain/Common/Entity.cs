@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Domain.Common
 {
-    public class Entity:EntityBase
+    public abstract class Entity:EntityBase
     {
+        public long CreatedById { get; set; }
+
+        public long LatestUpdatedById { get; set; }
+
+        public User CreatedBy { get; set; }
+
+        public User LatestUpdatedBy { get; set; }
 
     }
 }
