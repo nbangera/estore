@@ -8,7 +8,6 @@ namespace Ecommerce.Domain.Common
 {
     public abstract class Content : Entity
     {
-        private bool isDeleted;
 
         public bool IsPublished { get; set; }
 

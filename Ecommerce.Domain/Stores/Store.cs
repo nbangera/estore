@@ -45,5 +45,7 @@ namespace Ecommerce.Domain.Stores
         public virtual Currency PrimaryStoreCurrency { get; set; }
         
         public virtual Currency PrimaryExchangeRateCurrency { get; set; }
+
+
     }
 }
