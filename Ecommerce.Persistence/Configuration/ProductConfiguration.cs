@@ -16,7 +16,8 @@ namespace Ecommerce.Persistence.Configuration
             this.ToTable("Product");
             this.HasKey(t => t.Id);
             this.Property(t => t.MetaTitle).HasMaxLength(500);
-          
+            this.Property(t => t.Name).HasMaxLength(200);
+
         }
     }
 }

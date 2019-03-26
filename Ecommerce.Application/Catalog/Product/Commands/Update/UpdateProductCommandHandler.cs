@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Application.Catalog.Product.Commands.Create
+namespace Ecommerce.Application.Catalog.Product.Commands.Update
 {
-    class UpdateProductCommandHandler
+    public class UpdateProductCommandHandler
     {
     }
 }
