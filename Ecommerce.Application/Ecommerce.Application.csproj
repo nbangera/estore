@@ -33,6 +33,12 @@
     <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentValidation.8.2.0\lib\net45\FluentValidation.dll</HintPath>
     </Reference>
@@ -62,18 +68,22 @@
     <Compile Include="Catalog\Product\Commands\Update\UpdateProductCommandHandler.cs" />
     <Compile Include="Catalog\Product\Commands\Delete\DeleteProductCommand.cs" />
     <Compile Include="Catalog\Product\Commands\Update\UpdateProductCommand.cs" />
-    <Compile Include="Catalog\Product\Mapping\ProductMapping.cs" />
     <Compile Include="Catalog\Product\Queries\GetProductDetail\GetProductDetailQuery.cs" />
+    <Compile Include="Catalog\Product\Queries\GetProductDetail\GetProductDetailQueryHandler.cs" />
+    <Compile Include="Catalog\Product\Queries\GetProductDetail\GetProductDetailQueryValidator.cs" />
+    <Compile Include="Catalog\Product\Services\ProductService.cs" />
+    <Compile Include="Infrastructure\Model\Exceptions\NotFoundException.cs" />
+    <Compile Include="Catalog\Product\Queries\GetProductDetail\ProductDetailModel.cs" />
     <Compile Include="Catalog\Product\Queries\GetProductList\GetProductListQuery.cs" />
+    <Compile Include="Infrastructure\Mapping\AutoMapperProfile.cs" />
     <Compile Include="Infrastructure\Model\Content.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Catalog\Product\Events\" />
-    <Folder Include="Catalog\Product\Models\" />
-    <Folder Include="Catalog\Product\Services\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
