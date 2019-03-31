@@ -71,6 +71,7 @@
     <Compile Include="Catalog\Product\Queries\GetProductDetail\GetProductDetailQuery.cs" />
     <Compile Include="Catalog\Product\Queries\GetProductDetail\GetProductDetailQueryHandler.cs" />
     <Compile Include="Catalog\Product\Queries\GetProductDetail\GetProductDetailQueryValidator.cs" />
+    <Compile Include="Catalog\Product\Services\IProductService.cs" />
     <Compile Include="Catalog\Product\Services\ProductService.cs" />
     <Compile Include="Infrastructure\Model\Exceptions\NotFoundException.cs" />
     <Compile Include="Catalog\Product\Queries\GetProductDetail\ProductDetailModel.cs" />

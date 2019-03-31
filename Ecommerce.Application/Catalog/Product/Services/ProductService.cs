@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Application.Catalog.Product.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private readonly IMediator _mediator;
         public ProductService(IMediator mediator)
