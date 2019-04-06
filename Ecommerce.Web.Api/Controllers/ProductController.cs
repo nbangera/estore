@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace Ecommerce.Web.Api.Controllers
@@ -19,9 +20,9 @@ namespace Ecommerce.Web.Api.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult Get(long Id)
+        public async Task<IHttpActionResult> Get(long Id)
         {
-            return Ok(_productService.GetProduct(Id));
+            return Ok(await _productService.GetProduct(Id));
         }
     }
 }

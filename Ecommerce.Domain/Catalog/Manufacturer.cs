@@ -16,6 +16,8 @@ namespace Ecommerce.Domain.Catalog
         public string Description { get; set; }
 
         public virtual ICollection<Store> Stores { get; set; } = new List<Store>();
-        
+
+        public virtual ICollection<ProductManufacturer> ProductManufacturers { get; set; } = new List<ProductManufacturer>();
+
     }
 }

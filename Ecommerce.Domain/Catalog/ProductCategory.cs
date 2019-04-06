@@ -32,5 +32,9 @@ namespace Ecommerce.Domain.Catalog
         /// </summary>
         public int DisplayOrder { get; set; }
 
+        public virtual Product Product { get; set; }
+
+        public virtual Category Category { get; set; }
+
     }
 }

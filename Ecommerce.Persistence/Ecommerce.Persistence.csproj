@@ -50,7 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Configuration\CategoryConfiguration.cs" />
+    <Compile Include="Configuration\ManufacturerConfiguration.cs" />
+    <Compile Include="Configuration\ProductCategoryConfiguration.cs" />
     <Compile Include="Configuration\ProductConfiguration.cs" />
+    <Compile Include="Configuration\ProductManufacturerConfiguration.cs" />
+    <Compile Include="Configuration\StoreConfiguration.cs" />
+    <Compile Include="Configuration\TierPriceConfiguration.cs" />
+    <Compile Include="Configuration\UserConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

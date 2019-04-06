@@ -52,13 +52,14 @@ namespace Ecommerce.Web.Api.App_Start
             .InstancePerRequest();
 
             builder.RegisterType<ProductService>().As<IProductService>().InstancePerRequest();
-            //builder.RegisterType<ApplicationDbContext>().InstancePerRequest();
+            builder.RegisterType<ApplicationDbContext>().InstancePerRequest().WithParameter(new NamedParameter("nameOrConnectionString", "DBConnectionString"));
 
-            builder.Register(ctx =>
-            {
-                //var address = ctx.Resolve<IServerAddressProvider>().GetServerAddress();
-                return new ApplicationDbContext("abcd");
-            }).InstancePerRequest();
+
+            //builder.Register(ctx =>
+            //{
+            //    //var address = ctx.Resolve<IServerAddressProvider>().GetServerAddress();
+            //    return new ApplicationDbContext("abcd");
+            //}).InstancePerRequest();
 
 
             builder.RegisterAssemblyTypes(services).As<Profile>();

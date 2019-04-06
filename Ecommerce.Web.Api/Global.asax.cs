@@ -15,6 +15,7 @@ namespace Ecommerce.Web.Api
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
             Bootstrap.Run();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

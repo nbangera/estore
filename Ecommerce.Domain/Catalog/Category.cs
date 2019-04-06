@@ -11,6 +11,6 @@ namespace Ecommerce.Domain.Catalog
     public class Category:Content
     {
 
-
+        public virtual ICollection<ProductCategory> ProductCategories { get; set; } = new List<ProductCategory>();
     }
 }
