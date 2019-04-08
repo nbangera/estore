@@ -1,4 +1,5 @@
-﻿using Ecommerce.Domain.Common;
+﻿using Ecommerce.Domain.Catalog;
+using Ecommerce.Domain.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,13 @@ namespace Ecommerce.Domain.Stores
         public virtual Currency PrimaryStoreCurrency { get; set; }
         
         public virtual Currency PrimaryExchangeRateCurrency { get; set; }
+
+
+        public virtual ICollection<TierPrice> TierPrices { get; set; } = new List<TierPrice>();
+
+        public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+
+        public virtual ICollection<ManufacturerStore> Stores { get; set; } = new List<ManufacturerStore>();
 
 
     }

@@ -19,6 +19,7 @@ namespace Ecommerce.Domain.Catalog
         public bool ShowOnHomePage { get; set; }
 
         public long StoreId { get; set; }
+
         public virtual Store Store { get; set; }
     }
 }

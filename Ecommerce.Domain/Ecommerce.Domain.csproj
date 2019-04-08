@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Catalog\Category.cs" />
     <Compile Include="Catalog\Manufacturer.cs" />
+    <Compile Include="Catalog\ManufacturerStore.cs" />
     <Compile Include="Catalog\Product.cs" />
     <Compile Include="Catalog\ProductCategory.cs" />
     <Compile Include="Catalog\ProductManufacturer.cs" />
